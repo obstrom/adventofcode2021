@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class dayOne {
 
-    public static void main(String[] args) {
+    public void run() {
 
         System.out.println("\n### DAY 1 ### ");
 
@@ -20,7 +20,7 @@ public class dayOne {
 
     }
 
-    private static int findIncreasesInList(List<Integer> numberList) {
+    private int findIncreasesInList(List<Integer> numberList) {
         int countIncreases = 0;
         int previousValue = numberList.get(0);
 
@@ -32,13 +32,13 @@ public class dayOne {
         return countIncreases;
     }
 
-    private static void challengeOne(List<Integer> numberList) {
+    private void challengeOne(List<Integer> numberList) {
         System.out.print("\nChallenge 1 solution: ");
         System.out.println(findIncreasesInList(numberList));
 
     }
 
-    private static void challengeTwo(List<Integer> numberList) {
+    private void challengeTwo(List<Integer> numberList) {
         List<Integer> sumList = new ArrayList<>();
 
         for (int i = 0; i < numberList.size(); i++) {
@@ -49,7 +49,7 @@ public class dayOne {
             }
         }
 
-        System.out.print("\nChallenge 2 solution: ");
+        System.out.print("Challenge 2 solution: ");
         System.out.println(findIncreasesInList(sumList));
 
     }
