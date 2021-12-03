@@ -43,7 +43,7 @@ public class dayTwo {
         }).collect(Collectors.toList());
 
         challengeOne(commandList);
-        //challengeTwo(numberList);
+        challengeTwo(commandList);
 
     }
 
@@ -63,9 +63,23 @@ public class dayTwo {
 
     }
 
-    private void challengeTwo(Map<String, Integer> commands) {
+    private void challengeTwo(List<Command> commandList) {
+        int forwardPos = 0;
+        int depth = 0;
+        int aim = 0;
+        for (Command command: commandList) {
+            switch (command.getDirection()) {
+                case "forward" -> {
+                    forwardPos += command.getValue();
+                    depth += aim * command.getValue();
+                }
+                case "down" -> aim += command.getValue();
+                case "up" -> aim -= command.getValue();
+            }
+        }
 
         System.out.print("\nChallenge 2 solution: ");
+        System.out.println(forwardPos * depth);
 
     }
 
