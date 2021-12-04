@@ -1,12 +1,9 @@
 package com.obstrom.day3;
 
-import com.obstrom.day2.dayTwo;
 import com.obstrom.io.InputReader;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class dayThree {
 
@@ -67,10 +64,6 @@ public class dayThree {
 
         int oxygenGeneratorRating = Integer.parseInt(String.valueOf(oxygenGeneratorRatingList.get(0)), 2);
         int CO2ScrubberRating = Integer.parseInt(String.valueOf(CO2ScrubberRatingList.get(0)), 2);
-
-        System.out.println("-----------");
-        System.out.println(oxygenGeneratorRating);
-        System.out.println(CO2ScrubberRating);
 
         System.out.print("\nChallenge 2 solution: ");
         System.out.println(oxygenGeneratorRating * CO2ScrubberRating);
