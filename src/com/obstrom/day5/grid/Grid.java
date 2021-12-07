@@ -1,7 +1,6 @@
 package com.obstrom.day5.grid;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Grid {
 

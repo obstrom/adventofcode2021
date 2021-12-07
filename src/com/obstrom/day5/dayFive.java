@@ -26,17 +26,9 @@ public class dayFive {
                     };
                 }).toList();
 
-        /*for (Point[] line: lineList) {
-            System.out.println("["+line[0]+"], ["+line[1]+"]");
-        }*/
-
         challengeOne(lineList);
         challengeTwo(lineList);
 
-    }
-
-    private String printableLine(Point[] line) {
-        return "["+line[0]+"], ["+line[1]+"]";
     }
 
     private void challengeOne(List<Point[]> lineList) {
